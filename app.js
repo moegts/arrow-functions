@@ -210,8 +210,10 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// it may be different each time the function is called.
+
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+// The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function.
+
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// the this keyword is bound to different values based on the context in which the function is called. Whereas arrow functions use the value of this in their lexical scope. This leads to very different behaviour.
